@@ -3,6 +3,22 @@ import { Link } from 'react-router-dom';
 
 const blogPosts = [
   {
+    slug: 'home-remodeling-bathroom-remodel-builders-woodstock-ga',
+    title: 'Bathroom Remodel, Home Remodeling & Builders in Woodstock GA: The Complete FAQ for Cherokee County Homeowners',
+    excerpt: 'ROI data, permit requirements, real contractor red flags, and everything Cherokee County homeowners need before starting a bathroom remodel, home remodeling project, or hiring builders in Woodstock GA in 2026.',
+    date: 'April 22, 2026',
+    image: '/IMG_9321.JPG',
+    category: 'Home Remodeling Woodstock',
+  },
+  {
+    slug: 'basement-finishing-remodeling-woodstock-ga-faq',
+    title: 'Basement Finishing Woodstock GA: The Ultimate FAQ for Homeowners Planning a Basement Remodeling or Renovation Project',
+    excerpt: 'Real costs, real timelines, real contractor red flags — everything Woodstock and Cherokee County homeowners need to know before starting a basement finishing, remodeling, or renovation project in 2026.',
+    date: 'April 22, 2026',
+    image: '/phoecon6.jpeg',
+    category: 'Basement Finishing Woodstock',
+  },
+  {
     slug: 'science-of-summer-parties-finished-basement',
     title: 'The Science Behind Summer Parties and Why a Finished Basement Changes Everything',
     excerpt: 'Environmental psychology, acoustics research, and behavioral science all point to the same conclusion: a finished basement is the foundation of a genuinely great summer gathering. We break down the science.',

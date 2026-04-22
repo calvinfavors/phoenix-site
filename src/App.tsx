@@ -71,6 +71,8 @@ import SpringKitchenRemodelingMarietta from './pages/blog/SpringKitchenRemodelin
 import SpringKitchenRemodelingAlpharetta from './pages/blog/SpringKitchenRemodelingAlpharetta';
 import SummerBasementFAQ from './pages/blog/SummerBasementFAQ';
 import SummerPartyBasementFAQ from './pages/blog/SummerPartyBasementFAQ';
+import BasementWoodstockFAQ from './pages/blog/BasementWoodstockFAQ';
+import HomeRemodelingWoodstockFAQ from './pages/blog/HomeRemodelingWoodstockFAQ';
 
 function App() {
   return (
@@ -149,6 +151,8 @@ function App() {
             <Route path="/blog/spring-kitchen-remodeling-alpharetta-ga" element={<SpringKitchenRemodelingAlpharetta />} />
             <Route path="/blog/summer-basement-faq" element={<SummerBasementFAQ />} />
             <Route path="/blog/science-of-summer-parties-finished-basement" element={<SummerPartyBasementFAQ />} />
+            <Route path="/blog/basement-finishing-remodeling-woodstock-ga-faq" element={<BasementWoodstockFAQ />} />
+            <Route path="/blog/home-remodeling-bathroom-remodel-builders-woodstock-ga" element={<HomeRemodelingWoodstockFAQ />} />
           </Routes>
         </main>
         <Footer />
