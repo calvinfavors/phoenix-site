@@ -73,6 +73,9 @@ import SummerBasementFAQ from './pages/blog/SummerBasementFAQ';
 import SummerPartyBasementFAQ from './pages/blog/SummerPartyBasementFAQ';
 import BasementWoodstockFAQ from './pages/blog/BasementWoodstockFAQ';
 import HomeRemodelingWoodstockFAQ from './pages/blog/HomeRemodelingWoodstockFAQ';
+import GeneralContractorWoodstock from './pages/blog/GeneralContractorWoodstock';
+import RoofingWoodstockGA from './pages/blog/RoofingWoodstockGA';
+import DeckKitchenWoodstockGA from './pages/blog/DeckKitchenWoodstockGA';
 
 function App() {
   return (
@@ -153,6 +156,9 @@ function App() {
             <Route path="/blog/science-of-summer-parties-finished-basement" element={<SummerPartyBasementFAQ />} />
             <Route path="/blog/basement-finishing-remodeling-woodstock-ga-faq" element={<BasementWoodstockFAQ />} />
             <Route path="/blog/home-remodeling-bathroom-remodel-builders-woodstock-ga" element={<HomeRemodelingWoodstockFAQ />} />
+            <Route path="/blog/general-contractor-woodstock-ga" element={<GeneralContractorWoodstock />} />
+            <Route path="/blog/roofing-woodstock-ga-faq" element={<RoofingWoodstockGA />} />
+            <Route path="/blog/deck-builders-kitchen-remodeling-woodstock-ga" element={<DeckKitchenWoodstockGA />} />
           </Routes>
         </main>
         <Footer />

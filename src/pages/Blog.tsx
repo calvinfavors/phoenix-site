@@ -3,6 +3,30 @@ import { Link } from 'react-router-dom';
 
 const blogPosts = [
   {
+    slug: 'general-contractor-woodstock-ga',
+    title: 'General Contractor Woodstock GA: The Complete FAQ for Cherokee County Homeowners Hiring a Contractor in 2026',
+    excerpt: 'License verification, contract requirements, red flags, pricing benchmarks, and everything Woodstock homeowners need to know before hiring a general contractor or construction company in Cherokee County.',
+    date: 'April 28, 2026',
+    image: '/phoecon1.jpeg',
+    category: 'General Contractor Woodstock GA',
+  },
+  {
+    slug: 'roofing-woodstock-ga-faq',
+    title: 'Roofing Woodstock GA: The Complete FAQ on Roof Replacement, Repair & Roofing Companies for Cherokee County Homeowners',
+    excerpt: 'Real cost data, material comparisons, insurance claim guidance, and everything Woodstock homeowners need before hiring a roofing company or starting a roof replacement project in Cherokee County.',
+    date: 'April 28, 2026',
+    image: '/phoecon3.jpeg',
+    category: 'Roofing Woodstock GA',
+  },
+  {
+    slug: 'deck-builders-kitchen-remodeling-woodstock-ga',
+    title: 'Deck Builders & Kitchen Remodeling Woodstock GA: Complete FAQ on Costs, Materials, Permits & ROI',
+    excerpt: 'Real cost data, material comparisons, permit requirements, and ROI breakdowns for deck installation, deck repair, and kitchen remodeling in Woodstock GA — from actual 2025–2026 Cherokee County projects.',
+    date: 'April 28, 2026',
+    image: '/phoecon4.jpeg',
+    category: 'Deck Builders & Kitchen Woodstock GA',
+  },
+  {
     slug: 'home-remodeling-bathroom-remodel-builders-woodstock-ga',
     title: 'Bathroom Remodel, Home Remodeling & Builders in Woodstock GA: The Complete FAQ for Cherokee County Homeowners',
     excerpt: 'ROI data, permit requirements, real contractor red flags, and everything Cherokee County homeowners need before starting a bathroom remodel, home remodeling project, or hiring builders in Woodstock GA in 2026.',
