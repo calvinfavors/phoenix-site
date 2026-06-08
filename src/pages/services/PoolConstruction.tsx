@@ -127,12 +127,14 @@ export default function PoolConstruction() {
             <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
               See our craftsmanship in action with this custom pool build featuring steel reinforcement, professional plumbing, and expert excavation work.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
                 { src: '/PhoenixPool1.jpeg', alt: 'Pool excavation and steel framework' },
                 { src: '/phoenixpool2.jpeg', alt: 'Pool construction with spa feature' },
                 { src: '/phoenixpool3.jpeg', alt: 'Professional pool plumbing installation' },
                 { src: '/phoenixpool4.jpeg', alt: 'Spa detail with steel reinforcement' },
+                { src: '/1000011179.jpg', alt: 'Completed custom pool — finished water surface' },
+                { src: '/1000011187.jpg', alt: 'Custom pool with spa and deck — finished project' },
               ].map((image, index) => (
                 <div key={index} className="relative group aspect-square overflow-hidden rounded-xl shadow-lg">
                   <img

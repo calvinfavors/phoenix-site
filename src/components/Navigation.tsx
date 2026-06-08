@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown, Flame } from 'lucide-react';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [areasOpen, setAreasOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -89,14 +90,27 @@ export default function Navigation() {
               </div>
             </div>
 
-            <Link
-              to="/about"
-              className={`font-medium transition-colors ${
-                isScrolled || !isHome ? 'text-gray-700 hover:text-red-600' : 'text-white hover:text-red-400'
-              }`}
-            >
-              About
-            </Link>
+            <div className="relative group">
+              <button
+                className={`font-medium transition-colors flex items-center ${
+                  isScrolled || !isHome ? 'text-gray-700 hover:text-red-600' : 'text-white hover:text-red-400'
+                }`}
+              >
+                About
+                <ChevronDown size={16} className="ml-1" />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="py-2">
+                  <Link to="/about" className="block px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-red-600">
+                    About Us
+                  </Link>
+                  <Link to="/the-phoenix-way" className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-red-600 font-semibold">
+                    <Flame size={14} className="text-red-500" />
+                    The Phoenix Way
+                  </Link>
+                </div>
+              </div>
+            </div>
 
             <div className="relative group">
               <button
@@ -239,9 +253,24 @@ export default function Navigation() {
                 </div>
               )}
 
-              <Link to="/about" className="text-gray-700 hover:text-red-600 font-medium py-3 border-b border-gray-100">
+              <button
+                onClick={() => setAboutOpen(!aboutOpen)}
+                className="text-gray-700 hover:text-red-600 font-medium py-3 border-b border-gray-100 flex items-center justify-between w-full"
+              >
                 About
-              </Link>
+                <ChevronDown size={18} className={`transform transition-transform ${aboutOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {aboutOpen && (
+                <div className="pl-4 bg-gray-50">
+                  <Link to="/about" className="block text-gray-600 hover:text-red-600 py-2 text-sm">
+                    About Us
+                  </Link>
+                  <Link to="/the-phoenix-way" className="flex items-center gap-2 text-gray-600 hover:text-red-600 py-2 text-sm font-semibold">
+                    <Flame size={13} className="text-red-500" />
+                    The Phoenix Way
+                  </Link>
+                </div>
+              )}
 
               <button
                 onClick={() => setAreasOpen(!areasOpen)}

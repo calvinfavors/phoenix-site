@@ -48,6 +48,17 @@ import MasterBathRemodelingMetroAtlanta from './pages/blog/MasterBathRemodelingM
 import KitchenBathroomContractorNorthGeorgia from './pages/blog/KitchenBathroomContractorNorthGeorgia';
 import HousePaintingWoodstock from './pages/blog/HousePaintingWoodstock';
 import HousePaintingMarietta from './pages/blog/HousePaintingMarietta';
+import HousePaintingKennesaw from './pages/blog/HousePaintingKennesaw';
+import HousePaintingSmyrna from './pages/blog/HousePaintingSmyrna';
+import WholeHomeRenovationWoodstock from './pages/blog/WholeHomeRenovationWoodstock';
+import HomeAdditionMetroAtlanta from './pages/blog/HomeAdditionMetroAtlanta';
+import GeneralContractorWoodstock from './pages/blog/GeneralContractorWoodstock';
+import FinishedBasementContractorsWoodstock from './pages/blog/FinishedBasementContractorsWoodstock';
+import HomeBuildersWoodstock from './pages/blog/HomeBuildersWoodstock';
+import DeckBuildersWoodstock from './pages/blog/DeckBuildersWoodstock';
+import RoofingWoodstockGA from './pages/blog/RoofingWoodstockGA';
+import BathroomRenovationCostWoodstock from './pages/blog/BathroomRenovationCostWoodstock';
+import BathroomRemodelingAlpharettaMilton from './pages/blog/BathroomRemodelingAlpharettaMilton';
 import HousePaintingAlpharetta from './pages/blog/HousePaintingAlpharetta';
 import HousePaintingRoswell from './pages/blog/HousePaintingRoswell';
 import HousePaintingMetroAtlanta from './pages/blog/HousePaintingMetroAtlanta';
@@ -73,9 +84,7 @@ import SummerBasementFAQ from './pages/blog/SummerBasementFAQ';
 import SummerPartyBasementFAQ from './pages/blog/SummerPartyBasementFAQ';
 import BasementWoodstockFAQ from './pages/blog/BasementWoodstockFAQ';
 import HomeRemodelingWoodstockFAQ from './pages/blog/HomeRemodelingWoodstockFAQ';
-import GeneralContractorWoodstock from './pages/blog/GeneralContractorWoodstock';
-import RoofingWoodstockGA from './pages/blog/RoofingWoodstockGA';
-import DeckKitchenWoodstockGA from './pages/blog/DeckKitchenWoodstockGA';
+import ThePhoenixWay from './pages/ThePhoenixWay';
 
 function App() {
   return (
@@ -131,6 +140,17 @@ function App() {
             <Route path="/blog/kitchen-bathroom-contractor-north-georgia" element={<KitchenBathroomContractorNorthGeorgia />} />
             <Route path="/blog/house-painting-woodstock" element={<HousePaintingWoodstock />} />
             <Route path="/blog/house-painting-marietta" element={<HousePaintingMarietta />} />
+            <Route path="/blog/house-painting-kennesaw-ga" element={<HousePaintingKennesaw />} />
+            <Route path="/blog/house-painting-smyrna-ga" element={<HousePaintingSmyrna />} />
+            <Route path="/blog/whole-home-renovation-woodstock-ga" element={<WholeHomeRenovationWoodstock />} />
+            <Route path="/blog/home-addition-contractors-metro-atlanta" element={<HomeAdditionMetroAtlanta />} />
+            <Route path="/blog/general-contractor-woodstock-ga" element={<GeneralContractorWoodstock />} />
+            <Route path="/blog/finished-basement-contractors-woodstock-ga" element={<FinishedBasementContractorsWoodstock />} />
+            <Route path="/blog/home-builders-woodstock-ga" element={<HomeBuildersWoodstock />} />
+            <Route path="/blog/deck-builders-woodstock-ga" element={<DeckBuildersWoodstock />} />
+            <Route path="/blog/roofing-woodstock-ga" element={<RoofingWoodstockGA />} />
+            <Route path="/blog/bathroom-renovation-cost-woodstock-ga" element={<BathroomRenovationCostWoodstock />} />
+            <Route path="/blog/bathroom-remodeling-alpharetta-milton-ga" element={<BathroomRemodelingAlpharettaMilton />} />
             <Route path="/blog/house-painting-alpharetta-milton" element={<HousePaintingAlpharetta />} />
             <Route path="/blog/house-painting-roswell-sandy-springs" element={<HousePaintingRoswell />} />
             <Route path="/blog/house-painting-metro-atlanta" element={<HousePaintingMetroAtlanta />} />
@@ -156,9 +176,7 @@ function App() {
             <Route path="/blog/science-of-summer-parties-finished-basement" element={<SummerPartyBasementFAQ />} />
             <Route path="/blog/basement-finishing-remodeling-woodstock-ga-faq" element={<BasementWoodstockFAQ />} />
             <Route path="/blog/home-remodeling-bathroom-remodel-builders-woodstock-ga" element={<HomeRemodelingWoodstockFAQ />} />
-            <Route path="/blog/general-contractor-woodstock-ga" element={<GeneralContractorWoodstock />} />
-            <Route path="/blog/roofing-woodstock-ga-faq" element={<RoofingWoodstockGA />} />
-            <Route path="/blog/deck-builders-kitchen-remodeling-woodstock-ga" element={<DeckKitchenWoodstockGA />} />
+            <Route path="/the-phoenix-way" element={<ThePhoenixWay />} />
           </Routes>
         </main>
         <Footer />
