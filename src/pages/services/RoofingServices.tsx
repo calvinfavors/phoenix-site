@@ -1,9 +1,17 @@
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function RoofingServices() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Roofing Woodstock GA | Roof Replacement, Roof Repair & Storm Damage | Phoenix Construction"
+        description="Licensed roofing contractors in Woodstock GA. Roof replacement, roof repair, storm damage restoration, and free inspections throughout Cherokee County & Metro Atlanta. Call (678) 463-4893 for a free roof inspection."
+        canonical="/roofing-in-woodstock-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Roofing', url: '/roofing-in-woodstock-ga' }]}
+        serviceSchema={{ name: 'Roofing Services Woodstock GA', description: 'Professional roof replacement, roof repair, and storm damage restoration in Woodstock GA. Free inspections, architectural and impact-resistant shingles, licensed and insured. Serving Cherokee County and Metro Atlanta.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Roswell, GA', 'Alpharetta, GA', 'Cherokee County, GA'] }}
+      />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/IMG_9316.JPG" alt="Roofing project" className="w-full h-full object-cover" />

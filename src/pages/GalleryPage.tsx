@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { X, ChevronLeft, ChevronRight, Phone, Filter } from 'lucide-react';
+import SEO from '../components/SEO';
 
 type Category = 'all' | 'kitchen' | 'bathroom' | 'basement' | 'exterior' | 'custom' | 'pool';
 
@@ -93,6 +94,12 @@ export default function GalleryPage() {
 
   return (
     <div className="pt-24 pb-20">
+      <SEO
+        title="Project Gallery | Kitchen, Bathroom & Home Remodeling Photos | Phoenix Construction Woodstock GA"
+        description="Browse Phoenix Construction's project gallery — kitchen remodels, bathroom renovations, basement finishing, custom homes, and outdoor living projects completed in Woodstock GA and Metro Atlanta. See our work before you call."
+        canonical="/gallery"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Gallery', url: '/gallery' }]}
+      />
       <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">

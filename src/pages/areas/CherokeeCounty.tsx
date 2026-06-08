@@ -1,8 +1,16 @@
 import { MapPin, Phone, Home } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 export default function CherokeeCounty() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contractor Cherokee County GA | Kitchen, Bathroom & Home Remodeling | Phoenix Construction"
+        description="Phoenix Construction is Cherokee County GA's trusted general contractor for kitchen remodeling, bathroom renovations, basement finishing, custom home construction, and more. Call (678) 463-4893."
+        canonical="/cherokee-county"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Cherokee County', url: '/cherokee-county' }]}
+        localBusiness={{ cityName: 'Cherokee County', citySlug: 'cherokee-county', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'] }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

@@ -1,9 +1,17 @@
 import { MapPin, Phone, Home, CheckCircle, ChefHat, Bath, Hammer, Shield, Star, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function Woodstock() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="General Contractor Woodstock GA | Kitchen, Bathroom & Home Remodeling | Phoenix Construction"
+        description="Phoenix Construction is Woodstock GA's top-rated general contractor. Expert kitchen remodeling, bathroom renovations, basement finishing, custom home building & more in Cherokee County. Free estimates — call (678) 463-4893."
+        canonical="/woodstock"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Woodstock', url: '/woodstock' }]}
+        localBusiness={{ cityName: 'Woodstock', citySlug: 'woodstock', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 34.1015, longitude: -84.5194 }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

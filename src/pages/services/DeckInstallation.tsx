@@ -1,9 +1,17 @@
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function DeckInstallation() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Deck Builders Woodstock GA | New Deck Installation, Repair & Composite Decking | Phoenix Construction"
+        description="Expert deck builders in Woodstock GA. New deck construction, deck repair, composite decking, and screened porches throughout Cherokee County & Metro Atlanta. Free estimates — call (678) 463-4893."
+        canonical="/deck-installation-and-repair-in-woodstock-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Deck Installation', url: '/deck-installation-and-repair-in-woodstock-ga' }]}
+        serviceSchema={{ name: 'Deck Installation and Repair Woodstock GA', description: 'Professional deck building and repair services in Woodstock GA including new deck construction, composite decking, deck repair, and screened porches. Serving Cherokee County and Metro Atlanta.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Roswell, GA', 'Cherokee County, GA'] }}
+      />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/IMG_9319.JPG" alt="Custom deck project" className="w-full h-full object-cover" />

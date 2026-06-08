@@ -1,8 +1,15 @@
 import { CheckCircle, Users, Award, MessageCircle, Clock, Target } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="About Phoenix Construction | Licensed General Contractor Woodstock GA"
+        description="Phoenix Construction is a licensed general contractor based in Woodstock GA serving Cherokee County and Metro Atlanta. Learn about our team, our values, and why homeowners trust us for kitchen remodeling, bathroom renovations, and custom home construction."
+        canonical="/about"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about' }]}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

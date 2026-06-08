@@ -1,9 +1,21 @@
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function KitchenRemodeling() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Kitchen Remodeling Woodstock GA | Cabinets, Countertops & Open Concept Renovations | Phoenix Construction"
+        description="Expert kitchen remodeling contractors in Woodstock GA. Custom cabinets, quartz countertops, kitchen islands, backsplash, and open concept conversions. Serving Cherokee County & Metro Atlanta. Free estimates — call (678) 463-4893."
+        canonical="/kitchen-remodeling-in-woodstock-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Kitchen Remodeling', url: '/kitchen-remodeling-in-woodstock-ga' }]}
+        serviceSchema={{ name: 'Kitchen Remodeling Woodstock GA', description: 'Full kitchen renovation services in Woodstock GA including custom cabinet installation, quartz and granite countertops, kitchen islands, backsplash, flooring, open concept conversions, and appliance installation throughout Cherokee County and Metro Atlanta.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Roswell, GA', 'Milton, GA', 'Alpharetta, GA', 'Cherokee County, GA'] }}
+        faqSchema={[
+          { question: 'How much does kitchen remodeling cost in Woodstock GA?', answer: 'Kitchen remodeling in Woodstock GA typically ranges from $15,000–$30,000 for a cosmetic update, $30,000–$60,000 for a mid-range remodel, and $60,000–$120,000+ for a full luxury kitchen renovation. Contact Phoenix Construction at (678) 463-4893 for a free estimate.' },
+          { question: 'How long does a kitchen remodel take?', answer: 'A cosmetic kitchen refresh takes 3–4 weeks. A full gut remodel runs 6–10 weeks. An open-concept conversion with structural wall removal can take 10–14 weeks. Lead time for custom cabinets (4–8 weeks) is the most common schedule variable.' },
+        ]}
+      />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/IMG_9350.WEBP" alt="Modern kitchen remodel" className="w-full h-full object-cover" />

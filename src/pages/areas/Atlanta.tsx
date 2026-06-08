@@ -1,8 +1,16 @@
 import { MapPin, Phone, Home } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 export default function Atlanta() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contractor Atlanta GA | Kitchen Remodeling, Bathroom Renovations & Home Remodeling | Phoenix Construction"
+        description="Phoenix Construction provides expert kitchen remodeling, bathroom renovations, basement finishing, and custom home construction throughout Atlanta GA and Metro Atlanta. Call (678) 463-4893."
+        canonical="/atlanta"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Atlanta', url: '/atlanta' }]}
+        localBusiness={{ cityName: 'Atlanta', citySlug: 'atlanta', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 33.749, longitude: -84.388 }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

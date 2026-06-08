@@ -1,9 +1,20 @@
 import { CheckCircle, ArrowRight, Phone, MapPin, Home, Shield, Tv, Wine, Dumbbell, Gamepad2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function BasementRemodeling() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Basement Remodeling Woodstock GA | Basement Finishing, Home Theaters & In-Law Suites | Phoenix Construction"
+        description="Expert basement remodeling and finishing contractors in Woodstock GA. Entertainment spaces, home theaters, bars, in-law suites, and full gut remodels. Serving Cherokee County & Metro Atlanta. Free estimates — call (678) 463-4893."
+        canonical="/basement-remodeling-in-woodstock-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Basement Remodeling', url: '/basement-remodeling-in-woodstock-ga' }]}
+        serviceSchema={{ name: 'Basement Remodeling Woodstock GA', description: 'Complete basement finishing and remodeling services in Woodstock GA including entertainment rooms, home theaters, wet bars, in-law suites, and full gut renovations. Serving Cherokee County and Metro Atlanta.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Roswell, GA', 'Alpharetta, GA', 'Cherokee County, GA'] }}
+        faqSchema={[
+          { question: 'How much does basement finishing cost in Woodstock GA?', answer: 'Basement finishing in Woodstock GA typically costs $35–$65 per square foot, with a full basement (1,000–1,500 sq ft) running $40,000–$85,000. Basements with bathrooms, bars, or home theaters run higher. Contact Phoenix Construction at (678) 463-4893 for a detailed estimate.' },
+        ]}
+      />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/IMG_9351.WEBP" alt="Basement remodeling Woodstock GA - finished living space" className="w-full h-full object-cover" />

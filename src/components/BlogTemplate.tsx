@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Calendar, ArrowLeft, Phone, Loader2, Send } from 'lucide-react';
 import { createClient } from '@supabase/supabase-js';
+import SEO from './SEO';
 
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,
@@ -10,6 +11,7 @@ const supabase = createClient(
 
 interface BlogTemplateProps {
   title: string;
+  description?: string;
   category: string;
   categoryColor?: string;
   date: string;
@@ -17,11 +19,14 @@ interface BlogTemplateProps {
   heroImageAlt: string;
   source: string;
   serviceOptions: { value: string; label: string }[];
+  canonical?: string;
+  faqSchema?: { question: string; answer: string }[];
   children: React.ReactNode;
 }
 
 export default function BlogTemplate({
   title,
+  description,
   category,
   categoryColor = 'red',
   date,
@@ -29,6 +34,8 @@ export default function BlogTemplate({
   heroImageAlt,
   source,
   serviceOptions,
+  canonical,
+  faqSchema,
   children,
 }: BlogTemplateProps) {
   const navigate = useNavigate();
@@ -92,6 +99,22 @@ export default function BlogTemplate({
 
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title={`${title} | Phoenix Construction`}
+        description={description ?? `${title}. Phoenix Construction — licensed general contractor serving Woodstock, Marietta, Roswell, and Milton GA. Call (678) 463-4893 for a free estimate.`}
+        canonical={canonical}
+        image={heroImage}
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: title, url: canonical ?? '/blog' },
+        ]}
+        faqSchema={faqSchema}
+        articleSchema={{
+          headline: title,
+          datePublished: date,
+        }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

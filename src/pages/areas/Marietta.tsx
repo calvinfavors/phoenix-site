@@ -1,4 +1,5 @@
 import { MapPin, Phone, Home } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 export default function Marietta() {
   const kitchenImages = [
@@ -9,6 +10,13 @@ export default function Marietta() {
 
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contractor Marietta GA | Kitchen Remodeling, Bathroom Renovations & Home Building | Phoenix Construction"
+        description="Phoenix Construction serves Marietta GA with expert kitchen remodeling, bathroom renovations, basement finishing, and custom home construction. Licensed, insured, free estimates. Call (678) 463-4893."
+        canonical="/marietta"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Marietta', url: '/marietta' }]}
+        localBusiness={{ cityName: 'Marietta', citySlug: 'marietta', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 33.9526, longitude: -84.5499 }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

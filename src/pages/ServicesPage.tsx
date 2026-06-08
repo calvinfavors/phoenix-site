@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Bath, UtensilsCrossed, Home, Hammer, Wrench, Square, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function ServicesPage() {
   const services = [
@@ -97,6 +98,12 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Home Remodeling Services Woodstock GA | Kitchen, Bathroom, Basement & More | Phoenix Construction"
+        description="Browse Phoenix Construction's full range of services in Woodstock GA — kitchen remodeling, bathroom renovations, basement finishing, custom home construction, roofing, deck installation, and pool construction. Serving Cherokee County & Metro Atlanta."
+        canonical="/services"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }]}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

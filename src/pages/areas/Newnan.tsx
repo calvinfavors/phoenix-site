@@ -1,10 +1,18 @@
 import { MapPin, Phone, Home } from 'lucide-react';
 
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function Newnan() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contractor Newnan GA | Kitchen Remodeling, Bathroom Renovations & Home Remodeling | Phoenix Construction"
+        description="Phoenix Construction serves Newnan GA with expert kitchen remodeling, bathroom renovations, basement finishing, and home construction. Call (678) 463-4893 for a free estimate."
+        canonical="/newnan"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Newnan', url: '/newnan' }]}
+        localBusiness={{ cityName: 'Newnan', citySlug: 'newnan', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 33.3807, longitude: -84.7997 }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

@@ -1,9 +1,16 @@
 import Contact from '../components/Contact';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contact Phoenix Construction | Free Estimates Woodstock GA | (678) 463-4893"
+        description="Contact Phoenix Construction for a free estimate on kitchen remodeling, bathroom renovations, basement finishing, custom home construction, roofing, or deck building in Woodstock GA. Call (678) 463-4893 or fill out our online form."
+        canonical="/contact"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }]}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

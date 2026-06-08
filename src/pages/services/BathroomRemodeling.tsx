@@ -1,9 +1,22 @@
 import { CheckCircle, ArrowRight, Phone, MapPin, Star, Bath, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function BathroomRemodeling() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Bathroom Remodeling Woodstock GA | Walk-In Showers, Vanities & Full Renovations | Phoenix Construction"
+        description="Expert bathroom remodeling contractors in Woodstock GA. Walk-in showers, tub-to-shower conversions, vanity installation, custom tile, and full gut renovations. Serving Cherokee County & Metro Atlanta. Free estimates — call (678) 463-4893."
+        canonical="/bathroom-remodeling-in-woodstock-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Bathroom Remodeling', url: '/bathroom-remodeling-in-woodstock-ga' }]}
+        serviceSchema={{ name: 'Bathroom Remodeling Woodstock GA', description: 'Complete bathroom remodeling services in Woodstock GA including master bath renovation, shower remodel, tub to shower conversion, vanity installation, and custom tile work throughout Cherokee County and Metro Atlanta.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Roswell, GA', 'Milton, GA', 'Alpharetta, GA', 'Cherokee County, GA'] }}
+        faqSchema={[
+          { question: 'How much does a bathroom remodel cost in Woodstock GA?', answer: 'Bathroom remodeling in Woodstock GA typically ranges from $5,000–$12,000 for a cosmetic refresh, $15,000–$32,000 for a full mid-range remodel, and $35,000–$75,000+ for a primary suite transformation. Contact Phoenix Construction at (678) 463-4893 for a free in-home estimate.' },
+          { question: 'How long does a bathroom remodel take?', answer: 'A cosmetic refresh takes 2–3 weeks. A full gut remodel of a standard bathroom runs 4–6 weeks. A master bath renovation with custom tile and layout changes typically takes 8–12 weeks.' },
+          { question: 'Do I need a permit for a bathroom remodel in Cherokee County?', answer: 'Yes, for any work involving new electrical circuits, plumbing re-routes, or structural changes. A licensed contractor handles permit applications and inspections. Phoenix Construction pulls all required Cherokee County permits.' },
+        ]}
+      />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/IMG_9352.WEBP" alt="Bathroom remodeling Woodstock GA - luxury bathroom renovation" className="w-full h-full object-cover" />

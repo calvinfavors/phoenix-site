@@ -1,9 +1,17 @@
 import { CheckCircle, ArrowRight, Phone, Award, Clock, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function PoolConstruction() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Pool Construction Woodstock GA | Custom Swimming Pool Builders Cherokee County | Phoenix Construction"
+        description="Custom pool construction in Woodstock GA and Cherokee County. In-ground pools, pool decks, and outdoor living spaces designed for North Georgia homeowners. Call (678) 463-4893 for a free consultation."
+        canonical="/pool-construction-in-woodstock-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Pool Construction', url: '/pool-construction-in-woodstock-ga' }]}
+        serviceSchema={{ name: 'Pool Construction Woodstock GA', description: 'Custom swimming pool construction and pool deck installation in Woodstock GA and Cherokee County. Full-service pool building for North Georgia homeowners.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Roswell, GA', 'Cherokee County, GA'] }}
+      />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/PhoenixPool1.jpeg" alt="Custom pool construction" className="w-full h-full object-cover" />

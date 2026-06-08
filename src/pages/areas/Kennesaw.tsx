@@ -1,8 +1,16 @@
 import { MapPin, Phone, Home } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 export default function Kennesaw() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contractor Kennesaw GA | Kitchen Remodeling, Bathroom Renovations & New Construction | Phoenix Construction"
+        description="Phoenix Construction serves Kennesaw GA with kitchen remodeling, bathroom renovations, new construction, and basement finishing. Licensed general contractor for Cobb County homeowners. Call (678) 463-4893."
+        canonical="/kennesaw"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Kennesaw', url: '/kennesaw' }]}
+        localBusiness={{ cityName: 'Kennesaw', citySlug: 'kennesaw', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 34.0234, longitude: -84.6155 }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

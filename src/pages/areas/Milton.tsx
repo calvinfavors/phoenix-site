@@ -1,8 +1,16 @@
 import { MapPin, Phone, Home, Star } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 export default function Milton() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contractor Milton GA | Kitchen Remodeling, Bathroom Renovations & Custom Home Construction | Phoenix Construction"
+        description="Phoenix Construction serves Milton GA's estate properties and custom homes with expert kitchen remodeling, bathroom renovations, and full home construction. Call (678) 463-4893 for a free estimate."
+        canonical="/milton"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Milton', url: '/milton' }]}
+        localBusiness={{ cityName: 'Milton', citySlug: 'milton', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 34.1354, longitude: -84.3135 }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

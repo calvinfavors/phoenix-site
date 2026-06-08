@@ -1,8 +1,16 @@
 import { MapPin, Phone, Home, Star } from 'lucide-react';
+import SEO from '../../components/SEO';
 
 export default function Alpharetta() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Contractor Alpharetta GA | Kitchen Remodeling, Bathroom Renovations & Home Remodeling | Phoenix Construction"
+        description="Phoenix Construction brings premium kitchen remodeling, bathroom renovations, and custom home construction to Alpharetta GA. Serving North Fulton County's premier neighborhoods. Call (678) 463-4893."
+        canonical="/alpharetta"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Alpharetta', url: '/alpharetta' }]}
+        localBusiness={{ cityName: 'Alpharetta', citySlug: 'alpharetta', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 34.0754, longitude: -84.2941 }}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

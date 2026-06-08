@@ -1,5 +1,6 @@
 import { Calendar, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const blogPosts = [
   {
@@ -471,6 +472,12 @@ const blogPosts = [
 export default function Blog() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Home Remodeling & Construction Blog | Woodstock GA | Phoenix Construction"
+        description="Expert tips, cost guides, and project inspiration for kitchen remodeling, bathroom renovations, basement finishing, and custom home construction in Woodstock GA and Metro Atlanta. Phoenix Construction's resource library for Cherokee County homeowners."
+        canonical="/blog"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }]}
+      />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

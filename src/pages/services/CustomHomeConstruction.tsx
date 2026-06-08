@@ -1,9 +1,17 @@
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function CustomHomeConstruction() {
   return (
     <div className="min-h-screen pt-24">
+      <SEO
+        title="Custom Home Construction Woodstock GA | New Home Builders Cherokee County | Phoenix Construction"
+        description="Licensed custom home builders in Woodstock GA and Cherokee County. We build custom homes from the ground up — your lot, your design, your vision. Serving Woodstock, Canton, Marietta & North Atlanta. Free consultations — call (678) 463-4893."
+        canonical="/home-construction-in-woodstock-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Custom Home Construction', url: '/home-construction-in-woodstock-ga' }]}
+        serviceSchema={{ name: 'Custom Home Construction Woodstock GA', description: 'Full-service custom home construction in Woodstock GA and Cherokee County. Architectural design coordination, site evaluation, foundation, framing, interior finishing, and complete home construction from lot to move-in.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Kennesaw, GA', 'Smyrna, GA', 'Cherokee County, GA'] }}
+      />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/IMG_9354.WEBP" alt="Custom home interior" className="w-full h-full object-cover" />
