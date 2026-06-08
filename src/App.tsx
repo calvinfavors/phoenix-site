@@ -13,12 +13,12 @@ import CustomHomeConstruction from './pages/services/CustomHomeConstruction';
 import RoofingServices from './pages/services/RoofingServices';
 import DeckInstallation from './pages/services/DeckInstallation';
 import PoolConstruction from './pages/services/PoolConstruction';
-import BathroomRemodelingMarietta from './pages/services/BathroomRemodelingMarietta';
-import BathroomRemodelingRoswell from './pages/services/BathroomRemodelingRoswell';
-import BathroomRemodelingMilton from './pages/services/BathroomRemodelingMilton';
-import KitchenRemodelingMarietta from './pages/services/KitchenRemodelingMarietta';
-import KitchenRemodelingRoswell from './pages/services/KitchenRemodelingRoswell';
-import KitchenRemodelingMilton from './pages/services/KitchenRemodelingMilton';
+import BathroomRemodelingMariettaService from './pages/services/BathroomRemodelingMarietta';
+import BathroomRemodelingRoswellService from './pages/services/BathroomRemodelingRoswell';
+import BathroomRemodelingMiltonService from './pages/services/BathroomRemodelingMilton';
+import KitchenRemodelingMariettaService from './pages/services/KitchenRemodelingMarietta';
+import KitchenRemodelingRoswellService from './pages/services/KitchenRemodelingRoswell';
+import KitchenRemodelingMiltonService from './pages/services/KitchenRemodelingMilton';
 import Kennesaw from './pages/areas/Kennesaw';
 import Marietta from './pages/areas/Marietta';
 import Atlanta from './pages/areas/Atlanta';
@@ -109,12 +109,12 @@ function App() {
             <Route path="/roofing-in-woodstock-ga" element={<RoofingServices />} />
             <Route path="/deck-installation-and-repair-in-woodstock-ga" element={<DeckInstallation />} />
             <Route path="/pool-construction-in-woodstock-ga" element={<PoolConstruction />} />
-            <Route path="/bathroom-remodeling-marietta-ga" element={<BathroomRemodelingMarietta />} />
-            <Route path="/bathroom-remodeling-roswell-ga" element={<BathroomRemodelingRoswell />} />
-            <Route path="/bathroom-remodeling-milton-ga" element={<BathroomRemodelingMilton />} />
-            <Route path="/kitchen-remodeling-marietta-ga" element={<KitchenRemodelingMarietta />} />
-            <Route path="/kitchen-remodeling-roswell-ga" element={<KitchenRemodelingRoswell />} />
-            <Route path="/kitchen-remodeling-milton-ga" element={<KitchenRemodelingMilton />} />
+            <Route path="/bathroom-remodeling-marietta-ga" element={<BathroomRemodelingMariettaService />} />
+            <Route path="/bathroom-remodeling-roswell-ga" element={<BathroomRemodelingRoswellService />} />
+            <Route path="/bathroom-remodeling-milton-ga" element={<BathroomRemodelingMiltonService />} />
+            <Route path="/kitchen-remodeling-marietta-ga" element={<KitchenRemodelingMariettaService />} />
+            <Route path="/kitchen-remodeling-roswell-ga" element={<KitchenRemodelingRoswellService />} />
+            <Route path="/kitchen-remodeling-milton-ga" element={<KitchenRemodelingMiltonService />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/atlanta" element={<Atlanta />} />
