@@ -1,4 +1,5 @@
-import { MapPin, Phone, Home, Star } from 'lucide-react';
+import { CheckCircle, ArrowRight, MapPin, Phone, Star, Home, Bath, UtensilsCrossed, Layers, Shield, Hammer, Plus, Wrench } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
 
 export default function Milton() {
@@ -11,15 +12,17 @@ export default function Milton() {
         breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Milton', url: '/milton' }]}
         localBusiness={{ cityName: 'Milton', citySlug: 'milton', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 34.1354, longitude: -84.3135 }}
       />
+
+      {/* Hero */}
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
               <MapPin size={64} className="text-red-500" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Construction Services in Milton, GA</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Remodeling Contractor Milton GA</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Your trusted local contractor serving Milton and surrounding communities
+              North Fulton's trusted builder for estate homes, luxury kitchens & custom bathrooms
             </p>
           </div>
         </div>
@@ -27,47 +30,93 @@ export default function Milton() {
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
+          {/* Intro Prose */}
           <div className="prose max-w-none mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">
-              Milton's Premier Construction Company
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Phoenix Construction proudly serves Milton, Georgia, known for its rural charm, equestrian estates, and spacious properties. As one of the most sought-after communities in North Fulton County, Milton homeowners appreciate quality craftsmanship that respects the character of their unique properties.
+            <p className="text-gray-600 leading-relaxed mb-4 text-lg">
+              Phoenix Construction specializes in Milton's estate properties — from equestrian communities in Birmingham and Freemanville to the luxury developments in The Manor, White Columns, and Crooked Creek. Milton homeowners have some of the highest expectations in Metro Atlanta, and our project approach is built around that standard.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Whether you're renovating a farmhouse, updating a custom estate, or adding to your family home, our team understands the special considerations that come with Milton's distinctive properties and delivers results that exceed expectations.
+            <p className="text-gray-600 leading-relaxed mb-4 text-lg">
+              Our Milton projects typically involve premium material sourcing, custom millwork, and close coordination with designers and architects. We serve as the single point of contact from permit to punch list — so you spend less time managing and more time anticipating the result.
             </p>
           </div>
 
+          {/* Services Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Services - LEFT */}
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <Home className="text-red-600 mb-4" size={40} />
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Services in Milton</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li>Kitchen Remodeling</li>
-                <li>Bathroom Renovations</li>
-                <li>Basement Finishing</li>
-                <li>Custom Home Construction</li>
-                <li>Roofing Services</li>
-                <li>Deck Installation & Repair</li>
-                <li>Home Additions</li>
-                <li>Complete Home Remodeling</li>
-              </ul>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                <Home className="text-red-600 mr-3" size={28} />
+                Services in Milton
+              </h3>
+              <div className="space-y-3">
+                <Link to="/kitchen-remodeling-milton-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <UtensilsCrossed className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Kitchen Remodeling</span>
+                </Link>
+                <Link to="/bathroom-remodeling-milton-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Bath className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Bathroom Renovations</span>
+                </Link>
+                <Link to="/basement-remodeling-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Layers className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Basement Finishing</span>
+                </Link>
+                <Link to="/home-construction-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Home className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Custom Home Construction</span>
+                </Link>
+                <Link to="/roofing-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Shield className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Roofing Services</span>
+                </Link>
+                <Link to="/deck-installation-and-repair-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Hammer className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Deck Installation</span>
+                </Link>
+                <Link to="/contact" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Plus className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Home Additions</span>
+                </Link>
+                <Link to="/services" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Wrench className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Complete Home Remodeling</span>
+                </Link>
+              </div>
             </div>
 
+            {/* Why Choose Us - RIGHT */}
             <div className="bg-gradient-to-br from-red-50 to-white p-8 rounded-xl border border-red-100">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Us in Milton?</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li>Experienced with Milton's custom and estate homes</li>
-                <li>Familiar with local building codes and requirements</li>
-                <li>Fast response times in the area</li>
-                <li>Trusted by North Fulton homeowners</li>
-                <li>Licensed and insured in Georgia</li>
-                <li>Free estimates for Milton residents</li>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Why Choose Us</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Estate-scale project experience in Milton</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Premium material & finish sourcing</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Single point of contact from permit to punch list</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>North Fulton County building code expertise</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Licensed, bonded & insured in Georgia</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Free in-home consultations for Milton residents</span>
+                </li>
               </ul>
             </div>
           </div>
 
+          {/* Featured Project */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Featured: Custom Irish Bar & Wine Room
@@ -108,9 +157,10 @@ export default function Milton() {
             </div>
           </div>
 
+          {/* Neighborhoods */}
           <div className="bg-gray-50 p-8 rounded-xl mb-12">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">Milton Neighborhoods We Serve</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Milton Neighborhoods We Serve</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700 text-lg">
               <div>Crabapple</div>
               <div>Birmingham</div>
               <div>Deerfield</div>
@@ -123,6 +173,7 @@ export default function Milton() {
             </div>
           </div>
 
+          {/* CTA */}
           <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Start Your Milton Project?

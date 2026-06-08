@@ -1,4 +1,5 @@
-import { MapPin, Phone, Home, Star } from 'lucide-react';
+import { CheckCircle, ArrowRight, MapPin, Phone, Star, Home, Bath, UtensilsCrossed, Layers, Shield, Hammer, Plus, Wrench } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
 
 export default function Roswell() {
@@ -11,15 +12,17 @@ export default function Roswell() {
         breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Roswell', url: '/roswell' }]}
         localBusiness={{ cityName: 'Roswell', citySlug: 'roswell', services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Basement Finishing', 'Custom Home Construction', 'Roofing', 'Deck Installation'], latitude: 34.0232, longitude: -84.3616 }}
       />
+
+      {/* Hero */}
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
               <MapPin size={64} className="text-red-500" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Construction Services in Roswell, GA</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Remodeling Contractor Roswell GA</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Your trusted local contractor serving Roswell and surrounding communities
+              North Fulton's trusted kitchen remodeling, luxury bathroom renovation & home building team
             </p>
           </div>
         </div>
@@ -27,47 +30,93 @@ export default function Roswell() {
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
+          {/* Intro Prose */}
           <div className="prose max-w-none mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">
-              Roswell's Premier Construction Company
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Phoenix Construction is proud to serve Roswell, Georgia, one of the largest and most historic cities in the Atlanta metro area. With its charming downtown, beautiful parks, and diverse neighborhoods ranging from historic homes to modern developments, Roswell offers a unique blend of character and convenience.
+            <p className="text-gray-600 leading-relaxed mb-4 text-lg">
+              Phoenix Construction serves Roswell and the North Fulton corridor — from historic Canton Street to Holcomb Bridge, Riverside, and the Chattahoochee corridor. Roswell homes range from historic colonial revivals near downtown to newer construction in master-planned communities, and our team brings the expertise to handle both with equal quality.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Whether you're preserving the charm of a historic home near Canton Street, updating a property in one of Roswell's established neighborhoods, or modernizing a home near the Chattahoochee River, our team delivers quality craftsmanship tailored to your needs.
+            <p className="text-gray-600 leading-relaxed mb-4 text-lg">
+              North Fulton homeowners expect premium materials and a seamless build experience. We deliver both — with a dedicated project manager, transparent timeline, and workmanship warranty on every project. Whether you're renovating a 1980s kitchen in Martin's Landing or building out a luxury master bath in Horseshoe Bend, we know this market.
             </p>
           </div>
 
+          {/* Services Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Services - LEFT */}
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <Home className="text-red-600 mb-4" size={40} />
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Services in Roswell</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li>Kitchen Remodeling</li>
-                <li>Bathroom Renovations</li>
-                <li>Basement Finishing</li>
-                <li>Custom Home Construction</li>
-                <li>Roofing Services</li>
-                <li>Deck Installation & Repair</li>
-                <li>Home Additions</li>
-                <li>Complete Home Remodeling</li>
-              </ul>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                <Home className="text-red-600 mr-3" size={28} />
+                Services in Roswell
+              </h3>
+              <div className="space-y-3">
+                <Link to="/kitchen-remodeling-roswell-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <UtensilsCrossed className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Kitchen Remodeling</span>
+                </Link>
+                <Link to="/bathroom-remodeling-roswell-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Bath className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Bathroom Renovations</span>
+                </Link>
+                <Link to="/basement-remodeling-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Layers className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Basement Finishing</span>
+                </Link>
+                <Link to="/home-construction-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Home className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Custom Home Construction</span>
+                </Link>
+                <Link to="/roofing-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Shield className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Roofing Services</span>
+                </Link>
+                <Link to="/deck-installation-and-repair-in-woodstock-ga" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Hammer className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Deck Installation</span>
+                </Link>
+                <Link to="/contact" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Plus className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Home Additions</span>
+                </Link>
+                <Link to="/services" className="flex items-center text-gray-700 hover:text-red-600 transition-colors py-1">
+                  <Wrench className="text-red-600 mr-3 flex-shrink-0" size={18} />
+                  <span>Complete Home Remodeling</span>
+                </Link>
+              </div>
             </div>
 
+            {/* Why Choose Us - RIGHT */}
             <div className="bg-gradient-to-br from-red-50 to-white p-8 rounded-xl border border-red-100">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Us in Roswell?</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li>Experienced with Roswell's diverse home styles</li>
-                <li>Familiar with historic preservation requirements</li>
-                <li>Fast response times in the area</li>
-                <li>Trusted by North Fulton homeowners</li>
-                <li>Licensed and insured in Georgia</li>
-                <li>Free estimates for Roswell residents</li>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Why Choose Us</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Experience with North Fulton's luxury market</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Familiar with historic preservation requirements near Canton Street</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Trusted by Roswell & Sandy Springs homeowners</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Fulton County permit & code expertise</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Premium material sourcing for high-end finishes</span>
+                </li>
+                <li className="flex items-start text-gray-700">
+                  <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
+                  <span>Free estimates for Roswell residents</span>
+                </li>
               </ul>
             </div>
           </div>
 
+          {/* Featured Project */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Featured: Custom Irish Bar & Wine Room
@@ -108,9 +157,10 @@ export default function Roswell() {
             </div>
           </div>
 
+          {/* Neighborhoods */}
           <div className="bg-gray-50 p-8 rounded-xl mb-12">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">Roswell Neighborhoods We Serve</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Roswell Neighborhoods We Serve</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700 text-lg">
               <div>Historic Roswell</div>
               <div>Riverside</div>
               <div>Martin's Landing</div>
@@ -123,6 +173,7 @@ export default function Roswell() {
             </div>
           </div>
 
+          {/* CTA */}
           <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Start Your Roswell Project?

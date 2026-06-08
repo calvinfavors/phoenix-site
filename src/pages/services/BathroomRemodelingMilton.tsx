@@ -2,33 +2,33 @@ import { CheckCircle, ArrowRight, Phone, MapPin, Star, Bath, Shield } from 'luci
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
 
-export default function BathroomRemodeling() {
+export default function BathroomRemodelingMilton() {
   return (
     <div className="min-h-screen pt-24">
       <SEO
-        title="Bathroom Remodeling Woodstock GA | Walk-In Showers, Vanities & Full Renovations | Phoenix Construction"
-        description="Expert bathroom remodeling contractors in Woodstock GA. Walk-in showers, tub-to-shower conversions, vanity installation, custom tile, and full gut renovations. Serving Cherokee County & Metro Atlanta. Free estimates — call (678) 463-4893."
-        canonical="/bathroom-remodeling-in-woodstock-ga"
-        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Bathroom Remodeling', url: '/bathroom-remodeling-in-woodstock-ga' }]}
-        serviceSchema={{ name: 'Bathroom Remodeling Woodstock GA', description: 'Complete bathroom remodeling services in Woodstock GA including master bath renovation, shower remodel, tub to shower conversion, vanity installation, and custom tile work throughout Cherokee County and Metro Atlanta.', areaServed: ['Woodstock, GA', 'Canton, GA', 'Marietta, GA', 'Roswell, GA', 'Milton, GA', 'Alpharetta, GA', 'Cherokee County, GA'] }}
+        title="Bathroom Remodeling Milton GA | Luxury Estate Bathroom Renovations | Phoenix Construction"
+        description="Luxury bathroom remodeling Milton GA for estate homes and custom properties. Master bath renovations, spa showers, and premium finishes for North Fulton's most discerning homeowners. Call (678) 463-4893."
+        canonical="/bathroom-remodeling-milton-ga"
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Milton', url: '/milton' }, { name: 'Bathroom Remodeling Milton GA', url: '/bathroom-remodeling-milton-ga' }]}
+        serviceSchema={{ name: 'Bathroom Remodeling Milton GA', description: 'Luxury bathroom remodeling services in Milton GA for estate properties including master suite renovations, custom spa bathrooms, and premium finishes throughout North Fulton.', areaServed: ['Milton, GA', 'Crabapple, GA', 'Alpharetta, GA', 'Roswell, GA', 'North Fulton County, GA'] }}
         faqSchema={[
-          { question: 'How much does a bathroom remodel cost in Woodstock GA?', answer: 'Bathroom remodeling in Woodstock GA typically ranges from $5,000–$12,000 for a cosmetic refresh, $15,000–$32,000 for a full mid-range remodel, and $35,000–$75,000+ for a primary suite transformation. Contact Phoenix Construction at (678) 463-4893 for a free in-home estimate.' },
-          { question: 'How long does a bathroom remodel take?', answer: 'A cosmetic refresh takes 2–3 weeks. A full gut remodel of a standard bathroom runs 4–6 weeks. A master bath renovation with custom tile and layout changes typically takes 8–12 weeks.' },
-          { question: 'Do I need a permit for a bathroom remodel in Cherokee County?', answer: 'Yes, for any work involving new electrical circuits, plumbing re-routes, or structural changes. A licensed contractor handles permit applications and inspections. Phoenix Construction pulls all required Cherokee County permits.' },
+          { question: 'How much does a luxury bathroom remodel cost in Milton GA estate homes?', answer: 'Bathroom remodeling in Milton typically ranges from $15,000–$35,000 for a mid-range master bath, $40,000–$75,000 for a full luxury remodel, and $80,000–$100,000+ for a complete primary suite transformation with premium materials. Contact Phoenix Construction at (678) 463-4893 for a free estimate.' },
+          { question: 'How long does an estate bathroom remodel take?', answer: 'A standard master bath refresh takes 4–6 weeks. A full luxury remodel with custom finishes and high-end fixtures typically runs 10–14 weeks. A complete primary suite transformation can take 14–18 weeks depending on scope and custom elements.' },
+          { question: 'Do I need a permit for a bathroom remodel in Milton GA?', answer: 'Yes, for any work involving new electrical circuits, plumbing re-routes, or structural changes. Estate properties often require special inspections. Phoenix Construction handles all permit applications and works with Milton building codes.' },
         ]}
       />
       <div className="relative text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/IMG_9352.WEBP" alt="Bathroom remodeling Woodstock GA - luxury bathroom renovation" className="w-full h-full object-cover" />
+          <img src="/IMG_9354.WEBP" alt="Bathroom remodeling Milton GA - luxury estate bathroom renovation" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 to-slate-900/70" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Bathroom Remodeling Woodstock GA
+              Bathroom Remodeling Milton GA
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
-              Expert bathroom remodel contractors Woodstock GA homeowners trust. From shower remodel to tub to shower conversion, we transform your bathroom into a luxurious retreat.
+              Luxury estate bathroom remodeling for Milton's most discerning homeowners. Custom spa bathrooms, premium finishes, and white-glove service.
             </p>
           </div>
         </div>
@@ -38,13 +38,16 @@ export default function BathroomRemodeling() {
         <div className="max-w-4xl mx-auto">
           <div className="prose max-w-none mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">
-              Expert Bathroom Remodel Woodstock GA & Surrounding Areas
+              Luxury Estate Bathroom Remodel Milton GA
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Looking for <strong>bathroom remodeling Woodstock GA</strong> services you can trust? Phoenix Construction is the premier <strong>bathroom remodel contractor Woodstock GA</strong> homeowners choose for beautiful, functional bathroom renovations. Whether you need a complete <strong>bathroom renovation Woodstock GA</strong> transformation or a targeted <strong>shower remodel Woodstock GA</strong> update, our experienced team delivers exceptional results.
+              Looking for <strong>bathroom remodeling Milton GA</strong> services you can trust? Phoenix Construction is the premier <strong>bathroom remodel contractor Milton GA</strong> homeowners choose for luxury bathroom renovations on estate properties. Whether you need a complete <strong>bathroom renovation Milton GA</strong> transformation or a custom <strong>master bath Milton GA</strong> update, our experienced team delivers exceptional results with premium finishes and white-glove service.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              From <strong>tub to shower conversion Woodstock GA</strong> projects to luxury master bath renovations, we handle every aspect of your bathroom remodel. As the trusted <strong>bathroom remodel near me Woodstock GA</strong> solution, we serve homeowners throughout Cherokee County including Canton, Holly Springs, and Ball Ground.
+              From custom spa shower systems to freestanding soaking tubs, heated marble floors, and smart home bathroom integration, we handle every aspect of your luxury bathroom remodel. As the trusted <strong>bathroom remodel near me Milton GA</strong> solution for estate properties, we serve homeowners throughout Milton, Crabapple, and the surrounding North Fulton communities.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Milton's estate properties in The Manor, White Columns, and the Crabapple equestrian communities demand premium materials and exceptional craftsmanship. Our clients expect the finest finishes and personalized service—and we deliver exactly that for every luxury master bath renovation.
             </p>
           </div>
 
@@ -52,27 +55,27 @@ export default function BathroomRemodeling() {
             <div className="flex items-start gap-4">
               <Star className="text-red-600 flex-shrink-0 mt-1" size={28} />
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Woodstock's Trusted Bathroom Remodel Contractors</h3>
-                <p className="text-gray-600">With 20+ years of experience in <strong>bathroom remodeling Woodstock GA</strong>, we've transformed hundreds of bathrooms throughout Metro Atlanta. Our local expertise means we understand the unique needs of Cherokee County homes.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Milton's Premier Estate Bathroom Remodel Contractors</h3>
+                <p className="text-gray-600">With 20+ years of experience in <strong>bathroom remodeling Milton GA</strong>, we've transformed hundreds of luxury bathrooms in estate properties throughout North Fulton. Our expertise with large-scale master suites and premium finishes makes us the choice for Milton's most discerning homeowners.</p>
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Bathroom Remodeling Services</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Estate Luxury Services</h3>
               <ul className="space-y-3">
                 {[
-                  'Complete bathroom remodel Woodstock GA',
-                  'Shower remodel Woodstock GA',
-                  'Tub to shower conversion Woodstock GA',
-                  'Master bath renovation',
-                  'Walk-in shower installations',
-                  'Custom tile work and flooring',
-                  'Modern vanity and sink installation',
-                  'Custom cabinetry and storage solutions',
-                  'Accessibility modifications',
-                  'Heated flooring options',
+                  'Complete bathroom remodel Milton GA',
+                  'Luxury master suite renovation',
+                  'Custom spa bathroom design',
+                  'Freestanding soaking tub installation',
+                  'Steam shower systems',
+                  'Heated marble & stone floors',
+                  'Custom millwork & cabinetry',
+                  'Designer plumbing fixtures',
+                  'Smart home bathroom integration',
+                  'Accessibility modifications for aging in place',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <CheckCircle className="text-red-600 mr-3 flex-shrink-0 mt-1" size={20} />
@@ -87,12 +90,12 @@ export default function BathroomRemodeling() {
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Why Choose Phoenix Construction?</h3>
                 <ul className="space-y-3">
                   {[
-                    'Local bathroom remodel contractors Woodstock GA',
-                    'Free bathroom remodel consultation',
+                    'Experience with Milton\'s estate-scale projects',
+                    'Premium material sourcing and designer partnerships',
+                    'White-glove service for discerning homeowners',
                     'Licensed, bonded, and insured',
-                    'Quality materials and fixtures',
-                    'Timely project completion',
-                    'Workmanship warranty',
+                    'Familiar with Milton building codes',
+                    'Timely luxury project completion',
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <ArrowRight className="text-red-600 mr-3 flex-shrink-0 mt-1" size={20} />
@@ -103,9 +106,9 @@ export default function BathroomRemodeling() {
               </div>
 
               <div className="bg-gradient-to-r from-slate-900 to-slate-800 p-8 rounded-xl text-white text-center">
-                <h3 className="text-2xl font-bold mb-4">Ready for Your Bathroom Remodel?</h3>
+                <h3 className="text-2xl font-bold mb-4">Ready for Your Estate Bathroom?</h3>
                 <p className="mb-6 text-gray-300">
-                  Get your free bathroom remodeling estimate today
+                  Get your free luxury bathroom remodeling estimate today
                 </p>
                 <a
                   href="tel:6784634893"
@@ -119,28 +122,28 @@ export default function BathroomRemodeling() {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-xl mb-12">
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Bathroom Remodeling Process</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Estate Bathroom Remodeling Process</h3>
             <div className="grid md:grid-cols-4 gap-6">
               {[
                 {
                   step: '1',
-                  title: 'Free Consultation',
-                  description: 'We visit your home to discuss your bathroom remodel vision',
+                  title: 'In-Home Consultation',
+                  description: 'We visit your estate to discuss your luxury vision and requirements',
                 },
                 {
                   step: '2',
-                  title: 'Custom Design',
-                  description: 'Create a detailed plan with material and fixture selections',
+                  title: 'Premium Design',
+                  description: 'Create detailed plans with designer materials and custom elements',
                 },
                 {
                   step: '3',
-                  title: 'Expert Construction',
-                  description: 'Skilled craftsmen bring your bathroom renovation to life',
+                  title: 'Expert Craftsmanship',
+                  description: 'Elite craftsmen execute your custom bathroom with precision',
                 },
                 {
                   step: '4',
                   title: 'Final Walkthrough',
-                  description: 'We ensure your complete satisfaction with every detail',
+                  description: 'Personal walkthrough ensuring absolute satisfaction with details',
                 },
               ].map((item, index) => (
                 <div key={index} className="text-center">
@@ -157,25 +160,25 @@ export default function BathroomRemodeling() {
           <div className="bg-white border border-gray-200 rounded-xl p-8 mb-12">
             <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
               <MapPin className="text-red-600 mr-3" size={24} />
-              Areas We Serve for Bathroom Remodeling
+              Areas We Serve for Estate Bathroom Remodeling
             </h3>
             <p className="text-gray-600 mb-4">
-              As your local <strong>bathroom remodel near me</strong> solution, we serve homeowners throughout:
+              As your local premium <strong>bathroom remodel near me</strong> solution for estate homes, we serve homeowners throughout:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {[
+                'Milton, GA',
+                'Crabapple, GA',
+                'Alpharetta, GA',
+                'Roswell, GA',
+                'Johns Creek, GA',
                 'Woodstock, GA',
                 'Canton, GA',
-                'Holly Springs, GA',
-                'Ball Ground, GA',
-                'Roswell, GA',
-                'Alpharetta, GA',
-                'Marietta, GA',
                 'Kennesaw, GA',
               ].map((area) => (
                 <Link
                   key={area}
-                  to={area === 'Woodstock, GA' ? '/woodstock' : area === 'Canton, GA' ? '/blog/bathroom-remodeling-canton-ga' : area === 'Roswell, GA' ? '/roswell' : area === 'Alpharetta, GA' ? '/alpharetta' : area === 'Marietta, GA' ? '/marietta' : area === 'Kennesaw, GA' ? '/kennesaw' : '#'}
+                  to={area === 'Milton, GA' ? '/milton' : area === 'Alpharetta, GA' ? '/alpharetta' : area === 'Roswell, GA' ? '/roswell' : '#'}
                   className="flex items-center text-gray-600 hover:text-red-600 transition-colors"
                 >
                   <Bath className="text-red-600 mr-2 flex-shrink-0" size={16} />
@@ -197,11 +200,11 @@ export default function BathroomRemodeling() {
               </li>
               <li className="flex items-start">
                 <CheckCircle className="text-green-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                <span className="text-gray-600">20+ years of bathroom remodeling experience in Metro Atlanta</span>
+                <span className="text-gray-600">20+ years of luxury estate bathroom remodeling in North Fulton</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="text-green-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                <span className="text-gray-600">Workmanship warranty on all bathroom renovation projects</span>
+                <span className="text-gray-600">Workmanship warranty on all premium bathroom renovation projects</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="text-green-600 mr-3 mt-1 flex-shrink-0" size={20} />
@@ -212,21 +215,21 @@ export default function BathroomRemodeling() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <Link
-              to="/blog/home-remodeling-bathroom-remodel-builders-woodstock-ga"
+              to="/blog/bathroom-remodeling-alpharetta-milton-ga"
               className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
-              <h4 className="font-bold text-slate-900 mb-2">Bathroom Remodeling Woodstock GA Guide</h4>
-              <p className="text-gray-600 text-sm mb-3">Complete guide to bathroom remodel Woodstock GA services, costs, and trends.</p>
+              <h4 className="font-bold text-slate-900 mb-2">Bathroom Remodeling North Fulton: Real Costs & Data</h4>
+              <p className="text-gray-600 text-sm mb-3">Complete guide to luxury bathroom remodel costs in Milton, Alpharetta & Roswell GA.</p>
               <span className="text-red-600 font-semibold text-sm flex items-center">
                 Read More <ArrowRight size={16} className="ml-1" />
               </span>
             </Link>
             <Link
-              to="/blog/shower-remodel-woodstock-ga"
+              to="/blog/master-bath-remodeling-metro-atlanta"
               className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
-              <h4 className="font-bold text-slate-900 mb-2">Shower Remodel & Tub Conversion</h4>
-              <p className="text-gray-600 text-sm mb-3">Expert shower remodel Woodstock GA and tub to shower conversion services.</p>
+              <h4 className="font-bold text-slate-900 mb-2">Master Bath Renovation Guide</h4>
+              <p className="text-gray-600 text-sm mb-3">Expert tips for luxury master bath renovations and estate property bathroom design.</p>
               <span className="text-red-600 font-semibold text-sm flex items-center">
                 Read More <ArrowRight size={16} className="ml-1" />
               </span>
