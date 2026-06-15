@@ -46,6 +46,19 @@ interface SEOProps {
     dateModified?: string;
     headline: string;
   };
+  reviewSchema?: {
+    reviews: Array<{
+      author: string;
+      datePublished: string;
+      reviewBody: string;
+      ratingValue: number;
+      serviceType?: string;
+    }>;
+    aggregateRating: {
+      ratingValue: number;
+      reviewCount: number;
+    };
+  };
 }
 
 export default function SEO({
@@ -58,6 +71,7 @@ export default function SEO({
   serviceSchema,
   faqSchema,
   articleSchema,
+  reviewSchema,
 }: SEOProps) {
   const canonicalUrl = canonical ? `${SITE_URL}${canonical}` : undefined;
   const ogImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
@@ -205,6 +219,52 @@ export default function SEO({
         logo: { '@type': 'ImageObject', url: LOGO },
       },
       mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl ?? SITE_URL },
+    });
+  }
+
+  // Review + AggregateRating schema
+  if (reviewSchema) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'HomeAndConstructionBusiness',
+      name: 'Phoenix Construction',
+      image: LOGO,
+      url: SITE_URL,
+      telephone: PHONE,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: ADDRESS.street,
+        addressLocality: ADDRESS.city,
+        addressRegion: ADDRESS.state,
+        postalCode: ADDRESS.zip,
+        addressCountry: ADDRESS.country,
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: reviewSchema.aggregateRating.ratingValue.toString(),
+        reviewCount: reviewSchema.aggregateRating.reviewCount.toString(),
+        bestRating: '5',
+        worstRating: '1',
+      },
+      review: reviewSchema.reviews.map((r) => ({
+        '@type': 'Review',
+        author: { '@type': 'Person', name: r.author },
+        datePublished: r.datePublished,
+        reviewBody: r.reviewBody,
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: r.ratingValue.toString(),
+          bestRating: '5',
+          worstRating: '1',
+        },
+        ...(r.serviceType && {
+          itemReviewed: {
+            '@type': 'Service',
+            name: r.serviceType,
+            provider: { '@type': 'HomeAndConstructionBusiness', name: 'Phoenix Construction' },
+          },
+        }),
+      })),
     });
   }
 

@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import ThankYou from './pages/ThankYou';
+import Reviews from './pages/Reviews';
 import BathroomRemodeling from './pages/services/BathroomRemodeling';
 import KitchenRemodeling from './pages/services/KitchenRemodeling';
 import BasementRemodeling from './pages/services/BasementRemodeling';
@@ -117,6 +118,7 @@ function App() {
             <Route path="/kitchen-remodeling-milton-ga" element={<KitchenRemodelingMiltonService />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/reviews" element={<Reviews />} />
             <Route path="/atlanta" element={<Atlanta />} />
             <Route path="/kennesaw" element={<Kennesaw />} />
             <Route path="/marietta" element={<Marietta />} />

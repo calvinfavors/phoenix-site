@@ -7,6 +7,7 @@ import Process from '../components/Process';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import SEO from '../components/SEO';
+import HomeReviews from '../components/HomeReviews';
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
       <Services />
       <Gallery />
       <WhyChooseUs />
+      <HomeReviews />
       <Process />
       <FAQ />
       <Contact />
