@@ -91,7 +91,6 @@ import SpringKitchenRemodelingAlpharetta from './pages/blog/SpringKitchenRemodel
 import SummerBasementFAQ from './pages/blog/SummerBasementFAQ';
 import SummerPartyBasementFAQ from './pages/blog/SummerPartyBasementFAQ';
 import WholeHomeRenovationWoodstock from './pages/blog/WholeHomeRenovationWoodstock';
-import KitchenRemodelingKennesaw from './pages/blog/KitchenRemodelingKennesaw';
 import ThePhoenixWay from './pages/ThePhoenixWay';
 // New batch 1 (session prior)
 import KitchenRemodelCostGuide from './pages/blog/KitchenRemodelCostGuide';
