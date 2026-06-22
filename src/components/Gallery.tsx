@@ -6,14 +6,14 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
-    { src: '/PhoenixLogo1.jpg', alt: 'Custom kitchen remodel Woodstock' },
-    { src: '/PhoenixLogo2.jpg', alt: 'Woodstock kitchen renovation' },
+    { src: '/gallery/phoenix-bathroom.jpg', alt: 'Custom tile shower with frameless glass' },
+    { src: '/gallery/phoenix-bathroom-2.jpg', alt: 'Luxury bathroom renovation' },
+    { src: '/gallery/phoenix-hardwoods.jpg', alt: 'Custom hardwood floor installation' },
+    { src: '/gallery/phoenix-fireplace-1.jpg', alt: 'Custom tile fireplace surround' },
+    { src: '/gallery/phoenix-hardwoods-2.jpg', alt: 'Wide-plank hardwoods in open living area' },
     { src: '/phoecon1.jpeg', alt: 'Custom marble shower with glass enclosure' },
-    { src: '/phoecon4.jpeg', alt: 'Finished basement living area' },
-    { src: '/PhoenixLogo3.jpg', alt: 'Kitchen transformation Woodstock GA' },
-    { src: '/phoenix5.jpeg', alt: 'Exterior house painting' },
     { src: '/phoecon3.jpeg', alt: 'Elegant bathroom vanity' },
-    { src: '/PhoenixLogo4.jpg', alt: 'Completed Woodstock kitchen project' },
+    { src: '/PhoenixLogo1.jpg', alt: 'Custom kitchen remodel Woodstock' },
   ];
 
   const barImages = [

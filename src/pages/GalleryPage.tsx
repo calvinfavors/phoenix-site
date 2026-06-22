@@ -12,6 +12,13 @@ interface GalleryImage {
 }
 
 const allImages: GalleryImage[] = [
+  { src: '/gallery/phoenix-bathroom.jpg', alt: 'Custom tile shower with frameless glass enclosure - Woodstock GA', category: 'bathroom' },
+  { src: '/gallery/phoenix-bathroom-2.jpg', alt: 'Luxury bathroom renovation with soaking tub and custom tile', category: 'bathroom' },
+  { src: '/gallery/phoenix-hardwoods.jpg', alt: 'Hardwood floor installation - custom home remodeling Woodstock GA', category: 'custom' },
+  { src: '/gallery/phoenix-hardwoods-2.jpg', alt: 'Wide-plank hardwood floors in open-concept living area', category: 'custom' },
+  { src: '/gallery/phoenix-fireplace-1.jpg', alt: 'Custom tile fireplace surround and built-in renovation', category: 'custom' },
+  { src: '/gallery/phoenix-barn-1.jpg', alt: 'Custom barn construction and finish work - Metro Atlanta', category: 'exterior' },
+  { src: '/gallery/phoenix-barn-2.jpg', alt: 'Barn build detail - Phoenix Construction Metro Atlanta', category: 'exterior' },
   { src: '/PhoenixLogo1.jpg', alt: 'Custom kitchen remodel in Woodstock - white cabinetry with granite', category: 'kitchen' },
   { src: '/PhoenixLogo2.jpg', alt: 'Woodstock kitchen renovation - modern appliances and island', category: 'kitchen' },
   { src: '/PhoenixLogo3.jpg', alt: 'Kitchen transformation Woodstock GA - bright open layout', category: 'kitchen' },
