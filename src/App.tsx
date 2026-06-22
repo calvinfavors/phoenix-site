@@ -100,6 +100,9 @@ import WalkInShowerVsTub from './pages/blog/WalkInShowerVsTub';
 import KitchenCabinetRefacingVsReplacement from './pages/blog/KitchenCabinetRefacingVsReplacement';
 import SmallBathroomRemodelIdeas from './pages/blog/SmallBathroomRemodelIdeas';
 import QuartzVsGraniteVsMarble from './pages/blog/QuartzVsGraniteVsMarble';
+// New batch 3
+import OldBathroomDangers from './pages/blog/OldBathroomDangers';
+import NorthGeorgiaPlumbingBathroom from './pages/blog/NorthGeorgiaPlumbingBathroom';
 
 export default function App() {
   return (
@@ -211,6 +214,9 @@ export default function App() {
         <Route path="/blog/kitchen-cabinet-refacing-vs-replacement-woodstock-ga" element={<KitchenCabinetRefacingVsReplacement />} />
         <Route path="/blog/small-bathroom-remodel-ideas-woodstock-ga" element={<SmallBathroomRemodelIdeas />} />
         <Route path="/blog/quartz-vs-granite-vs-marble-countertops-woodstock-ga" element={<QuartzVsGraniteVsMarble />} />
+        {/* Batch 3 new blogs */}
+        <Route path="/blog/old-bathroom-dangers-woodstock-ga" element={<OldBathroomDangers />} />
+        <Route path="/blog/north-georgia-plumbing-bathroom-remodeling-woodstock-ga" element={<NorthGeorgiaPlumbingBathroom />} />
       </Routes>
       <Footer />
     </BrowserRouter>

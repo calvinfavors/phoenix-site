@@ -3,6 +3,23 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const blogPosts = [
+  // Batch 3 — June 22, 2026
+  {
+    slug: 'old-bathroom-dangers-woodstock-ga',
+    title: 'Old Bathroom Warning Signs: Hidden Dangers in Cherokee County & Metro Atlanta Homes Built Before 2000',
+    excerpt: 'Water damage behind tile, polybutylene pipe, hidden mold, missing GFCI outlets, inadequate ventilation — if your bathroom was last renovated before 2000, it may be hiding serious problems. A guide to what to look for and when to act.',
+    date: 'June 22, 2026',
+    image: '/gallery/phoenix-bathroom.jpg',
+    category: 'Bathroom Remodeling',
+  },
+  {
+    slug: 'north-georgia-plumbing-bathroom-remodeling-woodstock-ga',
+    title: 'North Georgia Plumbing & Bathroom Remodeling: What Cherokee County Homeowners Must Know Before Renovating',
+    excerpt: 'Polybutylene pipes, galvanized lines, Cherokee County permit requirements, water hardness, and why the plumbing era of your home matters — everything North Georgia homeowners need to know before a bathroom remodel.',
+    date: 'June 22, 2026',
+    image: '/gallery/phoenix-bathroom-2.jpg',
+    category: 'Bathroom Remodeling',
+  },
   // Batch 2 — June 17, 2026
   {
     slug: 'kitchen-cabinet-refacing-vs-replacement-woodstock-ga',
