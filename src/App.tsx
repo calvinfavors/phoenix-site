@@ -103,6 +103,13 @@ import QuartzVsGraniteVsMarble from './pages/blog/QuartzVsGraniteVsMarble';
 // New batch 3
 import OldBathroomDangers from './pages/blog/OldBathroomDangers';
 import NorthGeorgiaPlumbingBathroom from './pages/blog/NorthGeorgiaPlumbingBathroom';
+// New batch 4
+import KitchenRemodelTimeline from './pages/blog/KitchenRemodelTimeline';
+import KitchenRemodelROI from './pages/blog/KitchenRemodelROI';
+import CountertopEdgeProfiles from './pages/blog/CountertopEdgeProfiles';
+import MasterBathroomAddition from './pages/blog/MasterBathroomAddition';
+import TileShowerVsPrefab from './pages/blog/TileShowerVsPrefab';
+import ADABathroomRemodeling from './pages/blog/ADABathroomRemodeling';
 
 export default function App() {
   return (
@@ -217,6 +224,13 @@ export default function App() {
         {/* Batch 3 new blogs */}
         <Route path="/blog/old-bathroom-dangers-woodstock-ga" element={<OldBathroomDangers />} />
         <Route path="/blog/north-georgia-plumbing-bathroom-remodeling-woodstock-ga" element={<NorthGeorgiaPlumbingBathroom />} />
+        {/* Batch 4 new blogs */}
+        <Route path="/blog/kitchen-remodel-timeline-woodstock-ga" element={<KitchenRemodelTimeline />} />
+        <Route path="/blog/kitchen-remodel-roi-woodstock-ga" element={<KitchenRemodelROI />} />
+        <Route path="/blog/countertop-edge-profiles-woodstock-ga" element={<CountertopEdgeProfiles />} />
+        <Route path="/blog/master-bathroom-addition-cherokee-county-ga" element={<MasterBathroomAddition />} />
+        <Route path="/blog/tile-shower-vs-prefab-surround-woodstock-ga" element={<TileShowerVsPrefab />} />
+        <Route path="/blog/ada-accessible-bathroom-remodeling-woodstock-ga" element={<ADABathroomRemodeling />} />
       </Routes>
       <Footer />
     </BrowserRouter>

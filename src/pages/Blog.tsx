@@ -3,6 +3,55 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const blogPosts = [
+  // Batch 4 — July 1, 2026
+  {
+    slug: 'kitchen-remodel-timeline-woodstock-ga',
+    title: 'How Long Does a Kitchen Remodel Take? A Week-by-Week Timeline for Woodstock GA Homeowners',
+    excerpt: 'Most full kitchen remodels in Cherokee County take 10–16 weeks from first consultation to final walkthrough. This week-by-week breakdown covers every phase — design, permits, cabinet lead times, demo, countertop fabrication, and finish work — and what causes delays.',
+    date: 'July 1, 2026',
+    image: '/IMG_9350.WEBP',
+    category: 'Kitchen Remodeling',
+  },
+  {
+    slug: 'kitchen-remodel-roi-woodstock-ga',
+    title: 'Kitchen Remodel ROI in Woodstock GA: What Actually Adds Value vs. What Doesn\'t in 2026',
+    excerpt: 'Minor kitchen updates return 80–95% of cost; major luxury remodels return 55–70%. This guide covers what Cherokee County buyers actually value, which upgrades drive the most appeal, and how to calibrate your investment based on your timeline.',
+    date: 'July 1, 2026',
+    image: '/PhoenixLogo3.jpg',
+    category: 'Kitchen Remodeling',
+  },
+  {
+    slug: 'countertop-edge-profiles-woodstock-ga',
+    title: 'Countertop Edge Profiles Explained: Which Works Best for Woodstock GA Kitchens in 2026',
+    excerpt: 'Eased, beveled, ogee, waterfall, bullnose, chiseled — every countertop edge profile explained with honest recommendations for Cherokee County and Metro Atlanta kitchens. Includes a cabinet-style matching guide and cost upcharge data.',
+    date: 'July 1, 2026',
+    image: '/PhoenixLogo1.jpg',
+    category: 'Kitchen Remodeling',
+  },
+  {
+    slug: 'master-bathroom-addition-cherokee-county-ga',
+    title: 'Master Bathroom Addition in Cherokee County GA: What It Costs and What\'s Involved in 2026',
+    excerpt: 'Thousands of Cherokee County homes built in the 1980s–90s lack a proper master bath. This guide covers the two paths to adding a master bathroom (conversion vs. true addition), real 2026 cost breakdowns, permit requirements, and ROI in the local market.',
+    date: 'July 1, 2026',
+    image: '/gallery/phoenix-bathroom-2.jpg',
+    category: 'Bathroom Remodeling',
+  },
+  {
+    slug: 'tile-shower-vs-prefab-surround-woodstock-ga',
+    title: 'Custom Tile Shower vs. Prefab Surround: Why Woodstock GA Contractors Recommend Custom Tile',
+    excerpt: 'The upfront cost difference between a custom tile shower and a prefab acrylic surround is $3,500–$9,500. This guide explains why experienced Cherokee County contractors consistently recommend tile — and the installation details that determine whether a tile shower lasts 10 years or 30+.',
+    date: 'July 1, 2026',
+    image: '/gallery/phoenix-bathroom.jpg',
+    category: 'Bathroom Remodeling',
+  },
+  {
+    slug: 'ada-accessible-bathroom-remodeling-woodstock-ga',
+    title: 'ADA-Accessible Bathroom Remodeling in Woodstock GA: Aging-in-Place Upgrades That Actually Work',
+    excerpt: 'Curbless showers, grab bars installed in blocking (not drywall), comfort-height toilets, wider doorways, non-slip flooring — everything Cherokee County homeowners need to know about designing a bathroom that works safely for the long term.',
+    date: 'July 1, 2026',
+    image: '/phoecon1.jpeg',
+    category: 'Bathroom Remodeling',
+  },
   // Batch 3 — June 22, 2026
   {
     slug: 'old-bathroom-dangers-woodstock-ga',
