@@ -59,6 +59,10 @@ interface SEOProps {
       reviewCount: number;
     };
   };
+  itemListSchema?: Array<{
+    url: string;
+    name: string;
+  }>;
 }
 
 export default function SEO({
@@ -72,6 +76,7 @@ export default function SEO({
   faqSchema,
   articleSchema,
   reviewSchema,
+  itemListSchema,
 }: SEOProps) {
   const canonicalUrl = canonical ? `${SITE_URL}${canonical}` : undefined;
   const ogImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
@@ -264,6 +269,23 @@ export default function SEO({
             provider: { '@type': 'HomeAndConstructionBusiness', name: 'Phoenix Construction' },
           },
         }),
+      })),
+    });
+  }
+
+  // ItemList schema for blog/listing index pages
+  if (itemListSchema && itemListSchema.length > 0) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: title,
+      url: canonicalUrl ?? SITE_URL,
+      numberOfItems: itemListSchema.length,
+      itemListElement: itemListSchema.map((item, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: item.name,
+        url: `${SITE_URL}${item.url}`,
       })),
     });
   }

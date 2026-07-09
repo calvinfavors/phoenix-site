@@ -48,6 +48,19 @@ export default function BlogTemplate({
     message: '',
   });
 
+  // Convert display date ("July 1, 2026") to ISO 8601 ("2026-07-01") for structured data
+  const dateISO = (() => {
+    try {
+      const parsed = new Date(date);
+      if (!isNaN(parsed.getTime())) {
+        return parsed.toISOString().split('T')[0];
+      }
+    } catch {
+      // fall through
+    }
+    return date;
+  })();
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -112,7 +125,7 @@ export default function BlogTemplate({
         faqSchema={faqSchema}
         articleSchema={{
           headline: title,
-          datePublished: date,
+          datePublished: dateISO,
         }}
       />
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
@@ -149,6 +162,8 @@ export default function BlogTemplate({
                 src={heroImage}
                 alt={heroImageAlt}
                 className="w-full rounded-2xl mb-8 shadow-lg"
+                fetchPriority="high"
+                loading="eager"
               />
               {children}
             </article>

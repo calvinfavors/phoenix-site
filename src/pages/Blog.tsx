@@ -286,6 +286,10 @@ export default function Blog() {
         description="Expert remodeling guides, cost breakdowns, and project tips from Phoenix Construction — Woodstock GA's top-rated general contractor. Kitchen remodels, bathroom renovations, basement finishing & more across Cherokee County and Metro Atlanta."
         canonical="/blog"
         breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }]}
+        itemListSchema={blogPosts.slice(0, 20).map((p) => ({
+          name: p.title,
+          url: `/blog/${p.slug}`,
+        }))}
       />
 
       <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16">
