@@ -110,6 +110,9 @@ import CountertopEdgeProfiles from './pages/blog/CountertopEdgeProfiles';
 import MasterBathroomAddition from './pages/blog/MasterBathroomAddition';
 import TileShowerVsPrefab from './pages/blog/TileShowerVsPrefab';
 import ADABathroomRemodeling from './pages/blog/ADABathroomRemodeling';
+// New batch 5
+import KitchenIslandDesign from './pages/blog/KitchenIslandDesign';
+import KitchenLightingDesign from './pages/blog/KitchenLightingDesign';
 
 export default function App() {
   return (
@@ -231,6 +234,9 @@ export default function App() {
         <Route path="/blog/master-bathroom-addition-cherokee-county-ga" element={<MasterBathroomAddition />} />
         <Route path="/blog/tile-shower-vs-prefab-surround-woodstock-ga" element={<TileShowerVsPrefab />} />
         <Route path="/blog/ada-accessible-bathroom-remodeling-woodstock-ga" element={<ADABathroomRemodeling />} />
+        {/* Batch 5 new blogs */}
+        <Route path="/blog/kitchen-island-design-build-woodstock-ga" element={<KitchenIslandDesign />} />
+        <Route path="/blog/kitchen-lighting-design-woodstock-ga" element={<KitchenLightingDesign />} />
       </Routes>
       <Footer />
     </BrowserRouter>

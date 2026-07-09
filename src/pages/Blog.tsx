@@ -3,6 +3,23 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const blogPosts = [
+  // Batch 5 — July 9, 2026
+  {
+    slug: 'kitchen-island-design-build-woodstock-ga',
+    title: 'Kitchen Island Design & Build Guide for Woodstock GA Homeowners: Everything You Need to Know in 2026',
+    excerpt: 'Kitchen islands are the most-requested feature in Cherokee County remodels. This complete guide covers clearance rules, shape options, plumbing and electrical decisions, countertop overhangs, seating sizing, storage configuration, and cost tiers from $4,500 to $28,000+.',
+    date: 'July 9, 2026',
+    image: '/IMG_9352.WEBP',
+    category: 'Kitchen Remodeling',
+  },
+  {
+    slug: 'kitchen-lighting-design-woodstock-ga',
+    title: 'Kitchen Lighting Design Guide for Woodstock GA Homeowners: Layers, Types, and What to Do in 2026',
+    excerpt: 'Poor lighting is the most common kitchen design mistake in Cherokee County homes. This guide explains the three-layer lighting system, where recessed lights actually belong, how to size pendants over an island, under-cabinet lighting options, and full cost breakdowns.',
+    date: 'July 9, 2026',
+    image: '/IMG_9353.WEBP',
+    category: 'Kitchen Remodeling',
+  },
   // Batch 4 — July 1, 2026
   {
     slug: 'kitchen-remodel-timeline-woodstock-ga',
